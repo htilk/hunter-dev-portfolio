@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hunter Tielke | Software Engineering Portfolio</title>
+  <meta
+    name="description"
+    content="Hunter Tielke's software engineering portfolio featuring backend development, AI systems, cloud deployment, and open-source projects."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <span>Phoenix, AZ</span>
+      <span id="phoenix-time">Loading local time...</span>
+      <span id="phoenix-weather">Loading weather...</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav">
+    <a class="brand" href="#">
+    <span class="logo">HT</span>
+    <span class="brand-name">Hunter Tielke</span>
+    </a>
+
+  <div class="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#deployment">Deployment</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+    <section class="hero">
+      <p class="eyebrow">Software Engineering Portfolio</p>
+      <h1>Building backend systems, applied AI tools, and cloud-deployed applications.</h1>
+      <p class="hero-text">
+        I’m a software engineer with a B.S. in Computer Science from Arizona State University
+        and am currently a graduate student pursuing an M.S. in AI Engineering. My work focuses on
+        backend systems, applied AI, cloud deployment, automation, and developer tooling.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button secondary" href="https://github.com/htilk" target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+        <a class="button secondary" href="https://www.linkedin.com/in/hunter-tielke-0119a3237/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+        </a>
+        </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Projects</h2>
+        <p>
+            A focused collection of projects spanning backend APIs, applied AI,
+            cloud deployment, and open-source development.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>AI-Driven Course Backend</h3>
+          <p>
+            FastAPI backend work for an AI-Driven self-paced course (ASU Computer Org and Assembly Language), including analytics endpoints,
+            reporting exports, service-layer logic, and Canvas LMS integration support.
+        </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>SQLAlchemy</span>
+            <span>Docker</span>
+          </div>
+        </article>
+
+        <article class="card">
+        <h3>RuneLite Plugin Development</h3>
+        <p>
+            Upcoming Java plugin development focused on RuneLite API integration, event-driven
+            game-state handling, configurable overlays, and open-source documentation.
+        </p>
+          <div class="tags">
+            <span>Java</span>
+            <span>RuneLite API</span>
+            <span>Gradle</span>
+            <span>EventBus</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Azure Portfolio Site</h3>
+         <p>
+            Static portfolio site deployed with Azure Static Web Apps and connected to
+            GitHub Actions for automated CI/CD deployment.
+        </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Azure</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Focus</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skill-list">
+        <span>Python</span>
+        <span>Java</span>
+        <span>FastAPI</span>
+        <span>SQLAlchemy</span>
+        <span>Docker</span>
+        <span>REST APIs</span>
+        <span>Azure</span>
+        <span>GitHub Actions</span>
+        <span>JavaScript</span>
+        <span>HTML/CSS</span>
+        <span>Data Analytics</span>
+      </div>
+    </section>
+
+    <section class="section accent" id="deployment">
+      <div class="section-heading">
+        <p class="eyebrow">Cloud Deployment</p>
+        <h2>Deployed with Azure Static Web Apps</h2>
+      </div>
+
+      <p>
+        This site uses a simple static frontend and is designed to deploy automatically
+        from GitHub using Azure Static Web Apps.
+      </p>
+
+      <div class="status-card">
+        <span class="status-dot"></span>
+        <span id="deploy-status">Checking deployment status...</span>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect</h2>
+      </div>
+
+      <p>
+        I’m building my public engineering portfolio around backend development,
+        AI systems, open-source work, and cloud deployment.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://github.com/htilk" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/hunter-tielke-0119a3237/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Hunter Tielke. Built with Azure Static Web Apps.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
