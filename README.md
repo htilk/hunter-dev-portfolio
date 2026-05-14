@@ -10,7 +10,7 @@ The site currently highlights backend systems, applied AI interests, cloud deplo
 
 ## Live Site
 
-Coming soon after Azure Static Web Apps deployment.
+https://lemon-beach-0f0735d0f.7.azurestaticapps.net
 
 ## Purpose
 
