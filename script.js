@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const temperature = Math.round(current.temperature_2m);
       const feelsLike = Math.round(current.apparent_temperature);
 
-      phoenixWeatherElement.textContent = `${temperature}°F, feels like ${feelsLike}°F`;
+      phoenixWeatherElement.textContent = `${temperature} F, feels like ${feelsLike} F`;
     } catch (error) {
       phoenixWeatherElement.textContent = "Weather unavailable";
       console.error("Weather error:", error);

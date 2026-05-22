@@ -1,28 +1,16 @@
 # Hunter Dev Portfolio
 
-Personal software engineering portfolio built with HTML, CSS, and JavaScript, deployed with Azure Static Web Apps, and connected to GitHub-based CI/CD.
+Personal software engineering portfolio built with HTML, CSS, and JavaScript, deployed with Azure Static Web Apps, and connected to GitHub Actions for CI/CD.
 
-## Overview
+## Purpose
 
-This repository contains my public developer portfolio site. The goal of this project is to create a clean, professional landing page for showcasing my software engineering work, technical focus areas, and cloud deployment experience.
+This repository contains a public developer portfolio for presenting my software engineering background, featured project areas, technical skills, and cloud deployment experience.
 
-The site currently highlights backend systems, applied AI interests, cloud deployment, automation, developer tooling, and upcoming open-source work.
+The site currently highlights backend systems, applied AI interests, Azure deployment, automation, developer tooling, and upcoming open-source work.
 
 ## Live Site
 
 https://lemon-beach-0f0735d0f.7.azurestaticapps.net
-
-## Purpose
-
-This project serves as a central portfolio hub for my public engineering work.
-
-It is designed to:
-
-- Present my software engineering background and technical interests
-- Showcase featured projects in backend development, applied AI, and open-source work
-- Demonstrate a basic cloud deployment workflow with Azure Static Web Apps
-- Use GitHub as the source of truth for version control and deployment
-- Provide a foundation that can grow as I add stronger project demos and case studies
 
 ## Tech Stack
 
@@ -32,7 +20,7 @@ It is designed to:
 - Azure Static Web Apps
 - GitHub Actions
 
-## Current Features
+## Features
 
 - Responsive single-page portfolio layout
 - Phoenix, Arizona local time and weather display
@@ -41,31 +29,20 @@ It is designed to:
 - Azure deployment section
 - GitHub and LinkedIn links
 - Dynamic footer year
-- Weather API integration using client-side JavaScript
-
-## Featured Project Areas
-
-### AI-Driven Course Backend
-
-FastAPI backend work for an AI tutoring platform, including analytics endpoints, reporting exports, service-layer logic, and Canvas LMS integration support.
-
-### RuneLite Plugin Development
-
-Upcoming Java plugin work focused on RuneLite API integration, event-driven game-state handling, configurable overlays, and open-source documentation.
-
-### Azure Portfolio Site
-
-Static portfolio site deployed with Azure Static Web Apps and connected to GitHub Actions for automated CI/CD deployment.
+- Client-side weather API integration
 
 ## Project Structure
 
 ```text
 hunter-dev-portfolio/
-├── index.html
-├── styles.css
-├── script.js
-├── README.md
-└── .gitignore
+|-- index.html
+|-- styles.css
+|-- script.js
+|-- README.md
+|-- .gitignore
+`-- .github/
+    `-- workflows/
+        `-- azure-static-web-apps-lemon-beach-0f0735d0f.yml
 ```
 
 ## Local Development
@@ -77,7 +54,7 @@ git clone https://github.com/htilk/hunter-dev-portfolio.git
 cd hunter-dev-portfolio
 ```
 
-Run a local development server:
+Run a local static server:
 
 ```bash
 python -m http.server 8000
@@ -89,34 +66,46 @@ Then open:
 http://localhost:8000
 ```
 
-You can also open `index.html` directly in a browser, but using a local server is preferred because the site includes client-side JavaScript that fetches weather data.
+Opening `index.html` directly in a browser can work, but a local server better matches the hosted environment and avoids browser restrictions around client-side requests.
 
 ## Deployment
 
-This project is designed to deploy with Azure Static Web Apps.
+This project is deployed with Azure Static Web Apps. Because it is a plain static site, there is no build step, API folder, or generated output directory.
 
-Recommended Azure build settings:
+Azure Static Web Apps settings:
 
 | Setting | Value |
 |---|---|
 | App location | `/` |
 | API location | Leave blank |
 | Output location | Leave blank |
+| Build behavior | Skip app build |
 
-Because this is a plain static site, there is no separate build command or output directory.
+The Azure Static Web Apps resource is connected to this GitHub repository. Changes pushed to `main` trigger a production deployment.
 
-After Azure Static Web Apps is connected to the GitHub repository, future pushes to the `main` branch will trigger an automated deployment workflow.
+## GitHub Actions CI/CD
+
+The deployment workflow is defined in `.github/workflows/azure-static-web-apps-lemon-beach-0f0735d0f.yml`.
+
+The workflow:
+
+- runs on pushes to `main`
+- runs on pull requests targeting `main`
+- uploads the static site to Azure Static Web Apps
+- creates or updates Azure preview environments for pull requests
+- closes the Azure preview environment when a pull request is closed
+
+The workflow uses the Azure Static Web Apps deployment action and the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_BEACH_0F0735D0F`.
 
 ## Planned Improvements
 
-- Add live Azure deployment URL
 - Add links to individual project repositories
 - Add screenshots or demo images
 - Add a resume download link
 - Add project case studies
 - Add an experience section
 - Add custom domain support
-- Add deployment/status badge
+- Add a deployment/status badge
 - Add privacy-friendly analytics
 
 ## Author
