@@ -39,6 +39,7 @@ hunter-dev-portfolio/
 |-- styles.css
 |-- script.js
 |-- README.md
+|-- AGENTS.md
 |-- .gitignore
 `-- .github/
     `-- workflows/
