@@ -40,6 +40,7 @@ hunter-dev-portfolio/
 |-- index.html
 |-- styles.css
 |-- script.js
+|-- staticwebapp.config.json
 |-- README.md
 |-- AGENTS.md
 |-- .gitignore
@@ -84,6 +85,8 @@ Azure Static Web Apps settings:
 | Output location | Leave blank |
 | Build behavior | Skip app build |
 
+`staticwebapp.config.json` defines Azure Static Web Apps security headers for the hosted site.
+
 The Azure Static Web Apps resource is connected to this GitHub repository. Changes pushed to `main` trigger a production deployment.
 
 ## GitHub Actions CI/CD
@@ -98,7 +101,7 @@ The workflow:
 - creates or updates Azure preview environments for pull requests
 - closes the Azure preview environment when a pull request is closed
 
-The workflow uses the Azure Static Web Apps deployment action and the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_BEACH_0F0735D0F`.
+The workflow uses the Azure Static Web Apps deployment action and the Azure Static Web Apps deployment token stored in GitHub Secrets.
 
 ## Codex-Driven Agent Workflow
 
