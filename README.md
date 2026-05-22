@@ -1,12 +1,12 @@
 # Hunter Dev Portfolio
 
-Personal software engineering portfolio built with HTML, CSS, and JavaScript, deployed with Azure Static Web Apps, and connected to GitHub Actions for CI/CD.
+Personal software engineering portfolio built with HTML, CSS, and JavaScript, maintained with Codex-assisted development, deployed with Azure Static Web Apps, and connected to GitHub Actions for CI/CD.
 
 ## Purpose
 
 This repository contains a public developer portfolio for presenting my software engineering background, featured project areas, technical skills, and cloud deployment experience.
 
-The site currently highlights backend systems, applied AI interests, Azure deployment, automation, developer tooling, and upcoming open-source work.
+The site currently highlights backend systems, applied AI interests, Azure deployment, Codex-assisted repository maintenance, automation, developer tooling, and upcoming open-source work.
 
 ## Live Site
 
@@ -19,6 +19,7 @@ https://lemon-beach-0f0735d0f.7.azurestaticapps.net
 - JavaScript
 - Azure Static Web Apps
 - GitHub Actions
+- Codex AI coding agent workflow
 
 ## Features
 
@@ -30,6 +31,7 @@ https://lemon-beach-0f0735d0f.7.azurestaticapps.net
 - GitHub and LinkedIn links
 - Dynamic footer year
 - Client-side weather API integration
+- Codex-assisted documentation, QA, and maintenance workflow
 
 ## Project Structure
 
@@ -97,6 +99,10 @@ The workflow:
 - closes the Azure preview environment when a pull request is closed
 
 The workflow uses the Azure Static Web Apps deployment action and the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_BEACH_0F0735D0F`.
+
+## Codex Agent Workflow
+
+This repository includes `AGENTS.md` to guide future Codex-assisted work. Codex is used as an AI coding agent for scoped edits, documentation updates, QA review, Git commits, and GitHub push/deployment support. Hosting and production deployment still run through Azure Static Web Apps and GitHub Actions.
 
 ## Planned Improvements
 
