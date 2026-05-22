@@ -1,12 +1,12 @@
 # Hunter Dev Portfolio
 
-Personal software engineering portfolio built with HTML, CSS, and JavaScript, maintained with Codex-assisted development, deployed with Azure Static Web Apps, and connected to GitHub Actions for CI/CD.
+Personal software engineering portfolio built with HTML, CSS, and JavaScript, maintained through an AI-native development workflow, deployed with Azure Static Web Apps, and connected to GitHub Actions for CI/CD.
 
 ## Purpose
 
 This repository contains a public developer portfolio for presenting my software engineering background, featured project areas, technical skills, and cloud deployment experience.
 
-The site currently highlights backend systems, applied AI interests, Azure deployment, Codex-assisted repository maintenance, automation, developer tooling, and upcoming open-source work.
+The site currently highlights backend systems, applied AI interests, Azure deployment, agentic repository maintenance, automation, developer tooling, and upcoming open-source work.
 
 ## Live Site
 
@@ -19,7 +19,7 @@ https://lemon-beach-0f0735d0f.7.azurestaticapps.net
 - JavaScript
 - Azure Static Web Apps
 - GitHub Actions
-- Codex AI coding agent workflow
+- Codex-driven agent workflow
 
 ## Features
 
@@ -31,7 +31,7 @@ https://lemon-beach-0f0735d0f.7.azurestaticapps.net
 - GitHub and LinkedIn links
 - Dynamic footer year
 - Client-side weather API integration
-- Codex-assisted documentation, QA, and maintenance workflow
+- Agentic documentation, QA, and maintenance workflows
 
 ## Project Structure
 
@@ -100,9 +100,9 @@ The workflow:
 
 The workflow uses the Azure Static Web Apps deployment action and the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_BEACH_0F0735D0F`.
 
-## Codex Agent Workflow
+## Codex-Driven Agent Workflow
 
-This repository includes `AGENTS.md` to guide future Codex-assisted work. Codex is used as an AI coding agent for scoped edits, documentation updates, QA review, Git commits, and GitHub push/deployment support. Hosting and production deployment still run through Azure Static Web Apps and GitHub Actions.
+This repository includes `AGENTS.md` to guide a repository-aware agent workflow. Codex supports scoped agent tasks across documentation updates, QA review, maintenance edits, Git commits, and GitHub/Azure deployment support. The process remains human-in-the-loop: changes are orchestrated, reviewed, validated, and approved before they are pushed. Hosting and production deployment still run through Azure Static Web Apps and GitHub Actions.
 
 ## Planned Improvements
 
